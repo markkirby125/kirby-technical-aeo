@@ -4,7 +4,7 @@ description: "Use when establishing a high-authority technical entity graph acro
 category: technique
 triggers: [technical-seo, developer-marketing, entity-graph, docker-hub]
 risk: unverified
-author: william-fitzpatrick
+author: paul-kirby
 tags: [kirby, ai-agent, workflow]
 ---
 
