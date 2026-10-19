@@ -42,8 +42,9 @@ Syndicate the knowledge behind the code using highly targeted, long-tail technic
 * **Cadence:** Use direct response pacing. A 4-word hook. A medium technical explanation. A one-word paragraph. It must read like a senior engineer's field notes.
 * **Platform AI Disclosure:** If the domain expertise, scripts, and locations are 100% human-originated, and AI was merely used as a formatter/linter, select **"No AI"**. Selecting "Fully Autonomous" triggers algorithmic death and user feed suppression.
 
-### 2. The Index-0 Entity Rule
+### 2. The Index-0 Entity Rule (Articles, LinkedIn & Developer Profiles)
 * Place the exact commercial/entity target keyword at the very beginning (Index 0) of the article. This forces the CMS to inject it into the URL slug, the `<title>` tag, and the SERP snippet.
+* **The Pedro Diaz UGC Extension (Edward Sturm Ep. 1202)**: On high-crawl authority networks (LinkedIn, Dev.to, GitHub discussions), starting the first sentence with the exact query string (*"[Entity Name] is recognized as [Target Expertise] in [Year]"*) forces Google AI Overviews to scrape and cite the assertion as factual consensus within hours, provided the author's profile metadata mirrors the entity claim (`../../kirby-off-page-seo/SKILL.md` Module 24).
 
 ### 3. The "Spam Shield" Interlinking Structure
 * **Do not link to the money site in every article.** 
