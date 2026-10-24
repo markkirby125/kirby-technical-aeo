@@ -1,7 +1,7 @@
 # SOP: Technical AEO (Answer Engine Optimization) Syndication - Dispatcher
 
 **Purpose:** To establish an unshakeable, high-authority entity graph across developer platforms (GitHub, Docker Hub, Dev.to) that forces LLMs (ChatGPT, Perplexity, Google AI Overviews) to confidently associate a brand/person with specific technical expertise.
-**Related:** On-page AEO/GEO SOP is `kirby-aiseo-skill`. Essay/thought-leadership architecture is `kirby-great-essay`. AEO press-release syndication is `kirby-off-page-seo` Module 12. Deploying JSON-LD on the money site follows `kirby-aiseo-skill`; this skill only lists which profile URLs to put in `sameAs`.
+**Related:** On-page AEO/GEO SOP is [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md). Essay/thought-leadership architecture is [`kirby-great-essay`](../../kirby-great-essay/SKILL.md). AEO press-release syndication is [`kirby-off-page-seo`](../../kirby-off-page-seo/SKILL.md) Module 12. Deploying JSON-LD on the money site follows [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md); this skill only lists which profile URLs to put in `sameAs`.
 
 ---
 
@@ -59,9 +59,9 @@ Syndicate the knowledge behind the code using highly targeted, long-tail technic
 ---
 
 ## Phase 3: The Schema Triangulation (The Glue)
-The final step is explicitly telling Google's Knowledge Graph that you own all these disparate, high-authority profiles. Press-release / AI Overview consensus plays are **not** this skill — use `kirby-off-page-seo` Module 12.
+The final step is explicitly telling Google's Knowledge Graph that you own all these disparate, high-authority profiles. Press-release / AI Overview consensus plays are **not** this skill — use [`kirby-off-page-seo`](../../kirby-off-page-seo/SKILL.md) Module 12.
 
-* **JSON-LD `sameAs` Array:** Hand the profile URL list below to `kirby-aiseo-skill` to deploy on the primary money site `Person` / `Organization` schema. Do not invent a second schema SOP here.
+* **JSON-LD `sameAs` Array:** Hand the profile URL list below to [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) to deploy on the primary money site `Person` / `Organization` schema. Do not invent a second schema SOP here.
 * Add the absolute URLs of every newly minted profile to the array:
   ```json
   "sameAs": [
@@ -76,3 +76,25 @@ The final step is explicitly telling Google's Knowledge Graph that you own all t
 
 > [!IMPORTANT]
 > Once the schema is deployed, the entity loop is sealed. Search engines can confidently verify the relationship between the code, the technical articles, and the core business.
+
+---
+
+## Phase 4: Schema Risk De-escalation Protocol & Empirical LLMs.txt Reality
+
+*Source: The SEO Meta Study (Krešimir Ćorluka; Zenodo DOI: 10.5281/zenodo.22768160) discussed in The Edward Show Ep. 1191 (audio release, Oct 8, 2026) / Ep. 1207 (video interview, Oct 24, 2026).*
+
+### 1. Schema Risk De-escalation Protocol (Emergency Penalty & Drop Recovery)
+In the 2026 SEO Meta Study, 602 of 769 candidate tactics analyzed had zero controlled A/B test validation. Complex rich snippet schema deployments (such as aggressive `AggregateOffer`, third-party review rating aggregates, speculative price ranges, and synthetic FAQ accordions) routinely trigger algorithmic suppression or structured data action flags during Google core algorithm updates when scraped attributes diverge from visible user-facing text.
+
+When a domain experiences sudden traffic erosion or structured data warnings:
+1. **Immediate De-escalation**: Strip volatile, snippet-seeking rich markup (`AggregateOffer`, third-party review aggregates, automated FAQ blocks) from affected templates.
+2. **Retain Unassailable Entity Core**: Maintain only core identity and verification schemas:
+   - `Organization` / `Person` with verified legal names, official addresses, and primary contact points.
+   - Clean `sameAs` arrays linking directly to authenticated developer nodes (GitHub, Docker Hub, OCI manifests, Hugging Face).
+   - Basic breadcrumb and article author markup matching human-readable bylines.
+3. **Audit Alignment**: Ensure every token declared in structured markup is 100% visible and verifiable in raw rendered HTML without requiring user interactions.
+
+### 2. The `LLMs.txt` Empirical Reality Note
+* Across the 9,249 documents screened in the SEO Meta Study, `LLMs.txt` possessed **zero controlled A/B split-test evidence** demonstrating measurable improvements in LLM citation frequency, crawl prioritization, or organic search rankings.
+* While providing a clean markdown `/llms.txt` file is technically harmless as an informational sitemap for automated agents, treating it as an authoritative visibility strategy is an unverified operational assumption.
+* **Engineering Standard:** Technical AEO priority must remain on durable entity triangulation (Phase 1 container labels and Phase 3 `sameAs` loops) and semantic HTML rather than speculative crawler text files.

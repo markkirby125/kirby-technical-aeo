@@ -2,7 +2,7 @@
 name: kirby-technical-aeo
 description: "Use when establishing a high-authority technical entity graph across developer platforms (GitHub, Docker, Dev.to) to force LLM citations."
 category: technique
-triggers: [technical-seo, developer-marketing, entity-graph, docker-hub]
+triggers: [technical-seo, developer-marketing, entity-graph, docker-hub, schema-de-escalation, llms-txt-reality]
 risk: unverified
 author: paul-kirby
 tags: [kirby, ai-agent, workflow]
