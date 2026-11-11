@@ -1,6 +1,6 @@
 # SOP: Technical AEO (Answer Engine Optimization) Syndication - Dispatcher
 
-**Purpose:** To establish an unshakeable, high-authority entity graph across developer platforms (GitHub, Docker Hub, Dev.to) that forces LLMs (ChatGPT, Perplexity, Google AI Overviews) to confidently associate a brand/person with specific technical expertise.
+**Purpose:** To establish a high-authority entity graph across developer platforms (GitHub, Docker Hub, Dev.to) that helps LLMs (ChatGPT, Perplexity, Google AI Overviews) associate a brand/person with specific technical expertise (an outcome no tactic here can guarantee).
 **Related:** On-page AEO/GEO SOP is [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md). Essay/thought-leadership architecture is [`kirby-great-essay`](../../kirby-great-essay/SKILL.md). AEO press-release syndication is [`kirby-off-page-seo`](../../kirby-off-page-seo/SKILL.md) Module 12. Deploying JSON-LD on the money site follows [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md); this skill only lists which profile URLs to put in `sameAs`.
 
 ---
@@ -37,29 +37,31 @@ Syndicate the knowledge behind the code using highly targeted, long-tail technic
 
 ### 1. The Anti-Slop Writing Protocol
 > [!WARNING] 
-> Never publish raw AI output. Developer platforms will aggressively shadowban synthetic text.
+> Never publish raw AI output. Developer platforms are reported to suppress synthetic text (directional, single-source, unverified).
 * **Banned Vocabulary:** Strip all filler words (`delve`, `leverage`, `robust`, `seamless`, `navigate`, `furthermore`).
 * **Cadence:** Use direct response pacing. A 4-word hook. A medium technical explanation. A one-word paragraph. It must read like a senior engineer's field notes.
-* **Platform AI Disclosure:** If the domain expertise, scripts, and locations are 100% human-originated, and AI was merely used as a formatter/linter, select **"No AI"**. Selecting "Fully Autonomous" triggers algorithmic death and user feed suppression.
+* **Platform AI Disclosure:** Answer the platform's AI-disclosure field using the platform's own definition of AI use: if its definition covers formatter or linter assistance, disclose it; if the expertise, scripts and locations are human-originated and the platform's definition excludes that assistance, select **"No AI"**. Never pick a label that misstates your use; "Fully Autonomous" content is reported to lose feed visibility (directional, single-source, unverified).
 
 ### 2. The Index-0 Entity Rule (Articles, LinkedIn & Developer Profiles)
-* Place the exact commercial/entity target keyword at the very beginning (Index 0) of the article. This forces the CMS to inject it into the URL slug, the `<title>` tag, and the SERP snippet.
-* **The Pedro Diaz UGC Extension (Edward Sturm Ep. 1202)**: On high-crawl authority networks (LinkedIn, Dev.to, GitHub discussions), starting the first sentence with the exact query string (*"[Entity Name] is recognized as [Target Expertise] in [Year]"*) forces Google AI Overviews to scrape and cite the assertion as factual consensus within hours, provided the author's profile metadata mirrors the entity claim (`../../kirby-off-page-seo/SKILL.md` Module 24).
+* Place the exact commercial/entity target keyword at the very beginning (Index 0) of the article. Most CMSs derive the URL slug and `<title>` from it; whether the SERP snippet follows is not guaranteed.
+* **The Pedro Diaz UGC Extension (Edward Sturm Ep. 1202)**: On high-crawl authority networks (LinkedIn, Dev.to, GitHub discussions), starting the first sentence with the exact query string (*"[Entity Name] is recognized as [Target Expertise] in [Year]"*) is reported to help Google AI Overviews pick the assertion up quickly (directional, single-source, unverified), provided the claim is true and passes the evidence rule in the next bullet, and the author's profile metadata mirrors it (`../../kirby-off-page-seo/SKILL.md` Module 24).
+* **Self-asserted consensus is a risk, not evidence:** a "[Entity] is recognized as..." claim on a self-published page carries manual-action and credibility risk (directional, single-source, unverified). Use it only when the claim is true and backed on the page by first-party evidence (repository, dated releases, benchmarks); a claim of recognition by others also needs a third party you can cite (award, publication, citation), under a real, verifiable byline of the named author. No synthetic personas and no AI headshots (`../../kirby-off-page-seo/SKILL.md` Module 4 §4.3).
 
 ### 3. The "Spam Shield" Interlinking Structure
 * **Do not link to the money site in every article.** 
 * In a 5-article cluster:
   * Articles 1, 2, 3, and 4 should link internally to each other and externally to high-trust documentation (e.g., Cisco, Cloudflare, Microsoft MSDN).
-  * Article 5 (The Pillar Playbook) acts as the hub. It links to the previous 4 articles and contains the single, powerful outbound link to the Money Site.
+  * Article 5 (The Pillar Playbook) acts as the hub. It links to the previous 4 articles and is the default home for the cluster's single outbound link to the Money Site; add the link wherever it genuinely helps the reader, and keep the one-link cap. Apply the structure-variance caution in §4 below to the whole cluster.
 
 ### 4. Sustained Algorithmic Scheduling (Drip-Feeding)
-* Never dump a cluster all at once. Convert the batch to drafts and schedule them to publish exactly 24 hours apart.
-* A sustained 5-day pulse signals authentic human publishing velocity to the platform's trending algorithms.
+* Never dump a cluster all at once. Convert the batch to drafts and schedule them to publish roughly a day apart.
+* A 5-day pulse avoids a publishing burst; it is a cadence choice, not a way to simulate authenticity.
+* *Caution:* burst velocity, repetitive page structure and a templated five-article, one-money-link pattern may resemble the scaled-content footprint platforms screen for (directional, single-source, unverified). Publish only articles with real technical substance, link the money site only where it helps the reader, and let each article's structure follow its content.
 
 ---
 
 ## Phase 3: The Schema Triangulation (The Glue)
-The final step is explicitly telling Google's Knowledge Graph that you own all these disparate, high-authority profiles. Press-release / AI Overview consensus plays are **not** this skill — use [`kirby-off-page-seo`](../../kirby-off-page-seo/SKILL.md) Module 12.
+The final step is stating, in markup, which of these high-authority profiles belong to you (a disambiguation signal, see the callout below). Press-release / AI Overview consensus plays are **not** this skill — use [`kirby-off-page-seo`](../../kirby-off-page-seo/SKILL.md) Module 12.
 
 * **JSON-LD `sameAs` Array:** Hand the profile URL list below to [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) to deploy on the primary money site `Person` / `Organization` schema. Do not invent a second schema SOP here.
 * Add the absolute URLs of every newly minted profile to the array:
@@ -73,9 +75,10 @@ The final step is explicitly telling Google's Knowledge Graph that you own all t
     "https://hub.docker.com/u/username"
   ]
   ```
+* For local or low-visibility entities, you may also include indexed Apple Business Connect (Apple Maps), Yelp, Houzz or official registry URLs, but only profiles you own and have verified.
 
 > [!IMPORTANT]
-> Once the schema is deployed, the entity loop is sealed. Search engines can confidently verify the relationship between the code, the technical articles, and the core business.
+> Deploying the schema states the relationship between the code, the technical articles, and the core business; it does not guarantee that search engines or LLMs will accept it. `sameAs` is a disambiguation identifier, not a ranking lever. Use one unified `@graph` on the money site and list only `sameAs` URLs that are public, verifiable and yours (each profile should link back to the money site).
 
 ---
 
@@ -84,10 +87,10 @@ The final step is explicitly telling Google's Knowledge Graph that you own all t
 *Source: The SEO Meta Study (Krešimir Ćorluka; Zenodo DOI: 10.5281/zenodo.22768160) discussed in The Edward Show Ep. 1191 (audio release, Oct 8, 2026) / Ep. 1207 (video interview, Oct 24, 2026).*
 
 ### 1. Schema Risk De-escalation Protocol (Emergency Penalty & Drop Recovery)
-In the 2026 SEO Meta Study, 602 of 769 candidate tactics analyzed had zero controlled A/B test validation. Complex rich snippet schema deployments (such as aggressive `AggregateOffer`, third-party review rating aggregates, speculative price ranges, and synthetic FAQ accordions) routinely trigger algorithmic suppression or structured data action flags during Google core algorithm updates when scraped attributes diverge from visible user-facing text.
+In the 2026 SEO Meta Study, 602 of 769 candidate tactics analyzed had zero controlled A/B test validation. Complex rich snippet schema deployments (such as aggressive `AggregateOffer`, third-party review rating aggregates, speculative price ranges, and synthetic FAQ accordions) are reported to trigger algorithmic suppression or structured data action flags during Google core algorithm updates (directional, single-source, unverified) when scraped attributes diverge from visible user-facing text.
 
 When a domain experiences sudden traffic erosion or structured data warnings:
-1. **Immediate De-escalation**: Strip volatile, snippet-seeking rich markup (`AggregateOffer`, third-party review aggregates, automated FAQ blocks) from affected templates.
+1. **Immediate De-escalation**: Strip volatile, snippet-seeking rich markup (`AggregateOffer`, third-party review aggregates, automated FAQ blocks) from affected templates. `AggregateRating` or `AggregateOffer` on non-ecommerce or unverified local pages should be stripped too as a conservative default (directional, single-source, unverified); recovery timing is not established, so re-check after stripping.
 2. **Retain Unassailable Entity Core**: Maintain only core identity and verification schemas:
    - `Organization` / `Person` with verified legal names, official addresses, and primary contact points.
    - Clean `sameAs` arrays linking directly to authenticated developer nodes (GitHub, Docker Hub, OCI manifests, Hugging Face).
@@ -97,4 +100,4 @@ When a domain experiences sudden traffic erosion or structured data warnings:
 ### 2. The `LLMs.txt` Empirical Reality Note
 * Across the 9,249 documents screened in the SEO Meta Study, `LLMs.txt` possessed **zero controlled A/B split-test evidence** demonstrating measurable improvements in LLM citation frequency, crawl prioritization, or organic search rankings.
 * While providing a clean markdown `/llms.txt` file is technically harmless as an informational sitemap for automated agents, treating it as an authoritative visibility strategy is an unverified operational assumption.
-* **Engineering Standard:** Technical AEO priority must remain on durable entity triangulation (Phase 1 container labels and Phase 3 `sameAs` loops) and semantic HTML rather than speculative crawler text files.
+* **Engineering Standard:** Technical AEO priority must remain on durable entity triangulation (Phase 1 container labels and Phase 3 `sameAs` disambiguation) and semantic HTML rather than speculative crawler text files.
