@@ -82,9 +82,9 @@ The final step is stating, in markup, which of these high-authority profiles bel
 
 ---
 
-## Phase 4: Schema Risk De-escalation Protocol & Empirical LLMs.txt Reality
+## Phase 4: Schema Risk De-escalation Protocol, Review Schema Defense & Empirical LLMs.txt Reality
 
-*Source: The SEO Meta Study (Krešimir Ćorluka; Zenodo DOI: 10.5281/zenodo.22768160) discussed in The Edward Show Ep. 1191 (audio release, Oct 8, 2026) / Ep. 1207 (video interview, Oct 24, 2026).*
+*Source: The SEO Meta Study (Krešimir Ćorluka; Zenodo DOI: 10.5281/zenodo.22768160) discussed in The Edward Show Ep. 1191 (audio release, Oct 8, 2026) / Ep. 1207 (video interview, Oct 24, 2026); Rob Hoffman BOFU Alternatives Blueprint (`OUEELIis-do`).*
 
 ### 1. Schema Risk De-escalation Protocol (Emergency Penalty & Drop Recovery)
 In the 2026 SEO Meta Study, 602 of 769 candidate tactics analyzed had zero controlled A/B test validation. Complex rich snippet schema deployments (such as aggressive `AggregateOffer`, third-party review rating aggregates, speculative price ranges, and synthetic FAQ accordions) are reported to trigger algorithmic suppression or structured data action flags during Google core algorithm updates (directional, single-source, unverified) when scraped attributes diverge from visible user-facing text.
@@ -96,6 +96,9 @@ When a domain experiences sudden traffic erosion or structured data warnings:
    - Clean `sameAs` arrays linking directly to authenticated developer nodes (GitHub, Docker Hub, OCI manifests, Hugging Face).
    - Basic breadcrumb and article author markup matching human-readable bylines.
 3. **Audit Alignment**: Ensure every token declared in structured markup is 100% visible and verifiable in raw rendered HTML without requiring user interactions.
+4. **The Review Schema Defense Rule (HTML-Only Third-Party Ratings on Comparison & Alternatives Pages)**:
+   - **Plain-HTML RAG Ingestion**: On BOFU `[Competitor] Alternatives` and `X vs Y` comparison pages (`../../kirby-aiseo-skill/SKILL.md` §2.50), third-party rating scores, review counts, and sentiment summaries from **G2, Trustpilot, Capterra, and Reddit** must be rendered strictly as **visible plain HTML text, semantic `<table>` cells, and annotated UI screenshots with outbound verification links** for LLM RAG ingestion.
+   - **Strict JSON-LD Prohibition**: **STRICTLY BAN** injecting third-party `AggregateRating` or `Review` JSON-LD schema for competitor products, scraped third-party platform ratings, or self-serving first-party comparisons. Marking up third-party G2/Trustpilot/Capterra ratings or competitor entities in page-level `Review` / `AggregateRating` JSON-LD violates Google's Self-Serving Review and Structured Data guidelines, triggering manual structured-data actions and sitewide core-update devaluation. LLMs extract star ratings and review counts directly from visible HTML tables and text without requiring `AggregateRating` schema.
 
 ### 2. The `LLMs.txt` Empirical Reality Note
 * Across the 9,249 documents screened in the SEO Meta Study, `LLMs.txt` possessed **zero controlled A/B split-test evidence** demonstrating measurable improvements in LLM citation frequency, crawl prioritization, or organic search rankings.
