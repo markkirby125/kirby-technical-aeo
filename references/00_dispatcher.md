@@ -55,7 +55,7 @@ Syndicate the knowledge behind the code using highly targeted, long-tail technic
 
 ### 4. Sustained Algorithmic Scheduling (Drip-Feeding)
 * Never dump a cluster all at once. Convert the batch to drafts and schedule them to publish roughly a day apart.
-* A 5-day pulse avoids a publishing burst; it is a cadence choice, not a way to simulate authenticity.
+* A 5-day pulse spreads the cluster instead of publishing it all at once; it is a cadence choice, not a way to simulate authenticity or avoid a velocity signal (directional, single-source, unverified).
 * *Caution:* burst velocity, repetitive page structure and a templated five-article, one-money-link pattern may resemble the scaled-content footprint platforms screen for (directional, single-source, unverified). Publish only articles with real technical substance, link the money site only where it helps the reader, and let each article's structure follow its content.
 
 ---
