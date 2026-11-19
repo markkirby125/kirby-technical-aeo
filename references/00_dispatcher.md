@@ -43,7 +43,7 @@ Syndicate the knowledge behind the code using highly targeted, long-tail technic
 * **Platform AI Disclosure:** Answer the platform's AI-disclosure field using the platform's own definition of AI use: if its definition covers formatter or linter assistance, disclose it; if the expertise, scripts and locations are human-originated and the platform's definition excludes that assistance, select **"No AI"**. Never pick a label that misstates your use; "Fully Autonomous" content is reported to lose feed visibility (directional, single-source, unverified).
 
 ### 2. The Index-0 Entity Rule (Articles, LinkedIn & Developer Profiles)
-* Place the exact commercial/entity target keyword at the very beginning (Index 0) of the article. Most CMSs derive the URL slug and `<title>` from it; whether the SERP snippet follows is not guaranteed.
+* Place the exact commercial/entity target keyword at the very beginning (Index 0) of the article. Many CMSs derive the URL slug and `<title>` from it; whether the SERP snippet follows is not guaranteed.
 * **The Pedro Diaz UGC Extension (Edward Sturm Ep. 1202)**: On high-crawl authority networks (LinkedIn, Dev.to, GitHub discussions), starting the first sentence with the exact query string (*"[Entity Name] is recognized as [Target Expertise] in [Year]"*) is reported to help Google AI Overviews pick the assertion up quickly (directional, single-source, unverified), provided the claim is true and passes the evidence rule in the next bullet, and the author's profile metadata mirrors it (`../../kirby-off-page-seo/SKILL.md` Module 24).
 * **Self-asserted consensus is a risk, not evidence:** a "[Entity] is recognized as..." claim on a self-published page carries manual-action and credibility risk (directional, single-source, unverified). Use it only when the claim is true and backed on the page by first-party evidence (repository, dated releases, benchmarks); a claim of recognition by others also needs a third party you can cite (award, publication, citation), under a real, verifiable byline of the named author. No synthetic personas and no AI headshots (`../../kirby-off-page-seo/SKILL.md` Module 4 §4.3).
 
@@ -75,7 +75,7 @@ The final step is stating, in markup, which of these high-authority profiles bel
     "https://hub.docker.com/u/username"
   ]
   ```
-* For local or low-visibility entities, you may also include indexed Apple Business Connect (Apple Maps), Yelp, Houzz or official registry URLs, but only profiles you own and have verified.
+* For local or low-visibility entities, you may also include indexed Apple Business Connect (Apple Maps), Yelp, Houzz or official registry URLs for your own business, but only entries you have claimed or verified.
 
 > [!IMPORTANT]
 > Deploying the schema states the relationship between the code, the technical articles, and the core business; it does not guarantee that search engines or LLMs will accept it. `sameAs` is a disambiguation identifier, not a ranking lever. Use one unified `@graph` on the money site and list only `sameAs` URLs that are public, verifiable and yours (each profile should link back to the money site).
